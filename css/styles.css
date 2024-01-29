@@ -86,13 +86,20 @@ figure {
     padding-right: 50px;
 }
 .contact {
+    display: flex;
     color: var(--font-color-secondary);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-align: left;
+    align-items: center;
     text-decoration: none;
+}
+.header_icon {
+    margin-right: 10px;
+}
+.header_icon:hover {
+    fill: var(--highlighted-element);
 }
 
 /* order styling */
@@ -101,7 +108,11 @@ figure {
     align-items: center;
 }
 .index-solution {
-    background-color: #2F303A
+    background-color: #2F303A;
+    background-image: url(../images/Img\ Overlay.png) ,url(../images/1600x600-indyjskie.jpg);
+    background-size: 1600px 100% 600px 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 50%, 50% 50%;
 }
 .index-solution h1 {
     color:var(--for-darker-bg);
@@ -109,9 +120,10 @@ figure {
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-align: center;
+    text-align:center;
     margin-top: 106px;
-    }
+}
+
 .button--order {
     color:var(--for-darker-bg);
     background-color:var(--highlighted-element);
@@ -148,8 +160,21 @@ figure {
     text-align: left;
     inline-size: 270px;
 }
-.cipsun_p--right-pad {
+.cipsun_ul--flex {
+    display: flex;
+}
+.cipsun--margin-right {
     margin-right: 30px;
+}
+.cipsun_icons--bg {
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.cipsun_icons {
+    width: 70px;
+    height: 70px;
+    margin: 25px 100px;
 }
 
 /* crackheads styling */
@@ -206,12 +231,30 @@ margin-right: 30px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-bottom: 30px;
 }
 .team_window {
     background-color: var(--for-darker-bg);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
+}
+.team_socials {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    gap: 10px;
+    width: 100%;
+}
+.team_socials_link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team_icons {
+    width: 20px;
+    height: 20px;
 }
 /* footer styling */
 .footer .logo_studio {
