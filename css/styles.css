@@ -3,6 +3,8 @@
     --font-color-secondary:#757575;
     --highlighted-element: #2196F3;
     --for-darker-bg: #FFFFFF;
+    --inactive-element:#AFB1B8;
+
 }
 
 /* general styling */
@@ -251,10 +253,17 @@ margin-right: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+    color: var(--inactive-element)
 }
 .team_icons {
     width: 20px;
     height: 20px;
+}
+.team_socials_link:hover,
+.team_socials_link:focus {
+    color: var(--for-darker-bg);
+    background-color: var(--highlighted-element);
 }
 /* footer styling */
 .footer .logo_studio {
