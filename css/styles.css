@@ -380,6 +380,10 @@ background-color: #2F303A;
   cursor: pointer;
   background-color: var(--highlighted-element);
   color: var(--for-darker-bg);
+  box-shadow: 0px 2px 2px 0px #0000001F;
+  box-shadow: 0px 1px 2px 0px #00000014;
+  box-shadow: 0px 3px 1px 0px #0000001A;
+
 }
 .container_portfolio {
     flex-direction: column;
@@ -399,6 +403,12 @@ background-color: #2F303A;
 .portfolio_grid-card {
     background: #ffffff;
     border: 1px solid #eeeeee;
+}
+.portfolio_grid-card:hover,
+.portfolio_grid-card:focus {
+    box-shadow: 0px 1px 1px 0px #0000001F;
+    box-shadow: 0px 4px 4px 0px #0000000F;
+    box-shadow: 1px 4px 6px 0px #00000029;
 }
 .portfolio_grid-card--li {
     flex-basis: calc((100% - 90px) / 3);
